@@ -20,6 +20,9 @@
       </div>
 
       <div class="field">
+        {{> Text_Form_Control label="Location" placeholder="Honolulu, HI" value=profile.location errorMessage=(fieldError "location")}}
+      </div>
+      <div class="field">
         {{> Select_Form_Control label="Interests" options=interests errorMessage=(fieldError "interests") multiple=true }}
       </div>
 
